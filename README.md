@@ -23,3 +23,4 @@ Things you may want to cover:
 
 * ...
 # catalogo
+# catalogo,preyecto catalogo de zapatos yazmin elizabeth moreno gonzalez,sqlite

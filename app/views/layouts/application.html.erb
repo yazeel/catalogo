@@ -1,0 +1,63 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+<ul>
+<li><a href="/pedidos">Home</a></li>
+<li><a href="/pedidos/new">New Pedido</a></li>
+<li><a href="/pedidos/reporte">Reporte</a></li>
+
+<li style="float: right;><a class="active" href="#about"></a></li>
+</ul>
+</body>
+<head>
+
+  <title>CATALOGO </title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <head>
+    
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+</head>
+<body>
+<ima><img src=https://st2.depositphotos.com/3849181/6036/v/450/depositphotos_60362677-stock-illustration-logo-shoes.jpg width="120" height="110"></ima>
+<div class="container" style="text-align: center;">
+ <h1>CATALOGO </h1>
+  <h2> venta de zapatos</h2>
+<br>
+<div class="jumbotron text-center">
+  
+    <%= yield %>
+</div>
+</div>
+   
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>zapatillas</h3>
+     <img src=http://ferraro.com.ar/Image/0/450_450-2714791%20(dd).jpg width="200" height="150" >
+
+    </div>
+    <div class="col-sm-4">
+      <h3>Tennis</h3>
+   <img src=https://assets.liverpool.com.mx/assets/images/categorias/zapatos/el-zapatos.jpg width="200" height="150">
+
+    </div>
+    <div class="col-sm-4">
+      <h3>zapatos de niño</h3>        
+    <img src=http://cdn01.pisamonas.es/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/0/0/0021_zapatillas_ninos_de_cordones.jpg width="200" height="160">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

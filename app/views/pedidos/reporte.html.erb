@@ -1,0 +1,93 @@
+
+<table class="table">
+  <thead class="thead-inverse">
+    <hr>
+    <tr>
+      <th>Color</th>
+      <th>Talla</th>
+      <th>Modelo</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @pedidoporcantidad.each do |pedido| %>
+      <tr>
+      
+        <td><%= pedido.color %></td>
+        <td><%= pedido.talla %></td>
+        <td><%= pedido.modelo %></td>
+        <td><%= pedido.cantidad %></td>
+        <td><%= pedido.precio %></td>
+    
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+  <% pedidocantidad = @pedidoporcantidad.first %>
+  <% pedidocantidad1 = @pedidoporcantidad.last %>
+<h3> la cantidad mas baja es:</h3> <h4><%= pedidocantidad.cantidad %> </h4>
+<h3> la cantidad mas alta  es:</h3> <h4><%= pedidocantidad1.cantidad%> </h4>
+<hr>
+<table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th>Color</th>
+      <th>Talla</th>
+      <th>Modelo</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @pedidoporcantidad.each do |pedido| %>
+      <tr>
+      
+        <td><%= pedido.color %></td>
+        <td><%= pedido.talla %></td>
+        <td><%= pedido.modelo %></td>
+        <td><%= pedido.cantidad %></td>
+        <td><%= pedido.precio %></td>
+    
+      </tr>
+    <% end %>
+  </tbody>  
+</table>
+ <% pedidoprecio = @pedidoporprecio.first %>
+<% pedidoprecio1 = @pedidoporprecio.last %>
+<h3> El precio más barato es:</h3> <h4><%= pedidoprecio.precio %> </h4>
+<h3> El precio más caro es:</h3> <h4><%= pedidoprecio1.precio %> </h4>
+<hr>
+<table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th>Color</th>
+      <th>Talla</th>
+      <th>Modelo</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @pedidoporcantidad.each do |pedido| %>
+      <tr>
+      
+        <td><%= pedido.color %></td>
+        <td><%= pedido.talla %></td>
+        <td><%= pedido.modelo %></td>
+        <td><%= pedido.cantidad %></td>
+        <td><%= pedido.precio %></td>
+    
+      </tr>
+    <% end %>
+  </tbody>  
+</table>
+
+ <% pedidotalla = @pedidoportalla.first %>
+<% pedidotalla1 = @pedidoportalla.last %>
+<h3> la talla  más chica es:</h3> <h4><%= pedidotalla.talla %> </h4>
+<h3> El talla mas grande es:</h3> <h4><%= pedidotalla1.talla %> </h4>
+
+<%= link_to 'New Pedido', new_pedido_path %>
+
+
